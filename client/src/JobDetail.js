@@ -10,7 +10,6 @@ export class JobDetail extends Component {
   async componentDidMount() {
     const {jobId} = this.props.match.params
     const job = await loadJob(jobId)
-    console.log(job);
     this.setState({job: job})
   }
 
